@@ -1,0 +1,19 @@
+{
+    "name": "schema name",
+    "description": "test schema -- longer, more complex",
+    "properties": {
+        "type_b": {
+            "id": "#type_b",
+            "title": "schema b",
+            "type": "string"
+        },
+        "z": {
+            "id": "z",
+            "title": "schema z: id ref [ID name]",
+            "extends": {
+                "$ref": "#type_b"
+            },
+            "required": true
+        }
+    }
+}

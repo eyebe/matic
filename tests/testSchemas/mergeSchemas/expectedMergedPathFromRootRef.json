@@ -1,0 +1,22 @@
+{
+    "id": "#",
+    "name": "schema name",
+    "description": "schema description",
+    "properties": {
+        "type_b": {
+            "id": "#type_b",
+            "title": "schema b",
+            "type": "string"
+        },
+        "z": {
+            "id": "z",
+            "title": "schema z: path ref [path from root (#)]",
+            "extends": {
+                "id": "#type_b",
+                "title": "schema b",
+                "type": "string"
+            },
+            "required": true
+        }
+    }
+}
